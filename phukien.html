@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>DSH Clothing - Home</title>
+    <link rel="stylesheet" href="./css/phukien.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            fetch("./head.html").then(response => response.text()).then(data => {
+                document.head.innerHTML += data;
+            });
+
+            fetch("./header.html").then(response => response.text()).then(data => {
+                document.body.insertAdjacentHTML("afterbegin", data);
+            });
+
+            fetch("./footer.html").then(response => response.text()).then(data => {
+                document.body.insertAdjacentHTML("beforeend", data);
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <!-- Banner -->
+    <section class="banner">
+        <img src="img/biaphukien.png" alt="anh">
+        <a href="./hotro.html"><img src="./img/support.png" class="support zoom-link fw-bold"></a>
+    </section>
+
+    <main class="product-catalog">
+        <h3 class="title-product-catalog">Accessory</h3>
+
+        <section class="product-section">
+            <!-- Nút trái -->
+            <button class="scroll-btn left btn btn-light shadow" onclick="scrollProducts1(-1)">
+                &#10094;
+            </button>
+            <h5 class="title-product">Women's Jewelry</h5>
+
+            <div id="productScroll1"
+                class="product-list product-scroll-wrapper overflow-auto pb-3 d-flex scroll-smooth">
+
+               <div class="product-card col-3 zoom-hover p-4 bg-light border rounded">
+                    <img src="./img/trangsucnu1.jpg" alt="">
+                    <h5 class="product-title">Miuu Silver Women's Silver Necklace</h5>
+                    <p class="product-price">Price: <del>9999,000$</del> 1999,000$</p>
+                    <a href="./dathang.html" class="buy-btn">See Details</a>
+                </div>
+
+               <div class="product-card col-3 zoom-hover p-4 bg-light border rounded">
+                    <img src="./img/trangsucnu2.jpg" alt="do nu">
+                    <h5 class="product-title">We Flower's Ring</h5>
+                    <p class="product-price">Price: <del>9999,000$</del> 1999,000$</p>
+                    <a href="./dathang.html" class="buy-btn">See Details</a>
+                </div>
+
+               <div class="product-card col-3 zoom-hover p-4 bg-light border rounded">
+                    <img src="./img/trangsucnu3.jpg" alt="">
+                    <h5 class="product-title">Stylish Luxury Diamond Couple Rings</h5>
+                    <p class="product-price">Price: <del>9999,000$</del> 1999,000$</p>
+                    <a href="./dathang.html" class="buy-btn">See Details</a>
+                </div>
+               <div class="product-card col-3 zoom-hover p-4 bg-light border rounded">
+                    <img src="./img/trangsucnu4.jpg" alt="do nu">
+                    <h5 class="product-title">2 Simple Temperament Gold Earrings</h5>
+                    <p class="product-price">Price: <del>9999,000$</del> 1999,000$</p>
+                    <a href="./dathang.html" class="buy-btn">See Details</a>
+                </div>
+
+               <div class="product-card col-3 zoom-hover p-4 bg-light border rounded">
+                    <img src="./img/trangsucnu1.jpg" alt="">
+                    <h5 class="product-title">Miuu Silver Women's Silver Necklace</h5>
+                    <p class="product-price">Price: <del>9999,000$</del> 1999,000$</p>
+                    <a href="./dathang.html" class="buy-btn">See Details</a>
+                </div>
+
+               <div class="product-card col-3 zoom-hover p-4 bg-light border rounded">
+                    <img src="./img/trangsucnu2.jpg" alt="do nu">
+                    <h5 class="product-title">We Flower's Ring</h5>
+                    <p class="product-price">Price: <del>9999,000$</del> 1999,000$</p>
+                    <a href="./dathang.html" class="buy-btn">See Details</a>
+                </div>
+
+               <div class="product-card col-3 zoom-hover p-4 bg-light border rounded">
+                    <img src="./img/trangsucnu3.jpg" alt="">
+                    <h5 class="product-title">Stylish Luxury Diamond Couple Rings</h5>
+                    <p class="product-price">Price: <del>9999,000$</del> 1999,000$</p>
+                    <a href="./dathang.html" class="buy-btn">See Details</a>
+                </div>
+               <div class="product-card col-3 zoom-hover p-4 bg-light border rounded">
+                    <img src="./img/trangsucnu4.jpg" alt="do nu">
+                    <h5 class="product-title">2 Simple Temperament Gold Earrings</h5>
+                    <p class="product-price">Price: <del>9999,000$</del> 1999,000$</p>
+                    <a href="./dathang.html" class="buy-btn">See Details</a>
+                </div>
+
+            </div>
+            <!-- Nút phải -->
+            <button class="scroll-btn right btn btn-light shadow" onclick="scrollProducts1(1)">
+                &#10095;
+            </button>
+        </section>
+        <!-- hàng dưới -->
+        <section class="product-section">
+            <!-- Nút trái -->
+            <button class="scroll-btn left btn btn-light shadow" onclick="scrollProducts2(-1)">
+                &#10094;
+            </button>
+
+            <h5 class="title-product">Accessory</h5>
+
+            <div id="productScroll2"
+                class="product-list product-scroll-wrapper overflow-auto pb-3 d-flex scroll-smooth">
+
+               <div class="product-card col-3 zoom-hover p-4 bg-light border rounded">
+                    <img src="./img/1.jpg" alt="do nu">
+                    <h5 class="product-title">MOSSDOOM Women's Handbag Simple design Easy to match Fashion</h5>
+                    <p class="product-price">Price: <del>9999,000$</del> 1999,000$</p>
+                    <a href="./dathang.html" class="buy-btn">See Details</a>
+                </div>
+               <div class="product-card col-3 zoom-hover p-4 bg-light border rounded">
+                    <img src="./img/2.jpg" alt="do nu">
+                    <h5 class="product-title">RION crossbody bag for women, soft, elastic high quality PU leather</h5>
+                    <p class="product-price">Price: <del>9999,000$</del> 1999,000$</p>
+                    <a href="./dathang.html" class="buy-btn">See Details</a>
+                </div>
+               <div class="product-card col-3 zoom-hover p-4 bg-light border rounded">
+                    <img src="./img/3.jpg" alt="do nu">
+                    <h5 class="product-title">Men's fashion backpack, multi-function, large capacity</h5>
+                    <p class="product-price">Price: <del>9999,000$</del> 1999,000$</p>
+                    <a href="./dathang.html" class="buy-btn">See Details</a>
+                </div>
+               <div class="product-card col-3 zoom-hover p-4 bg-light border rounded">
+                    <img src="./img/4.jpg" alt="do nu">
+                    <h5 class="product-title">Luxury and classy men's watches, big brands</h5>
+                    <p class="product-price">Price: <del>9999,000$</del> 1999,000$</p>
+                    <a href="./dathang.html" class="buy-btn">See Details</a>
+                </div>
+               <div class="product-card col-3 zoom-hover p-4 bg-light border rounded">
+                    <img src="./img/1.jpg" alt="do nu">
+                    <h5 class="product-title">MOSSDOOM Women's Handbag Simple design Easy to match Fashion</h5>
+                    <p class="product-price">Price: <del>9999,000$</del> 1999,000$</p>
+                    <a href="./dathang.html" class="buy-btn">See Details</a>
+                </div>
+               <div class="product-card col-3 zoom-hover p-4 bg-light border rounded">
+                    <img src="./img/2.jpg" alt="do nu">
+                    <h5 class="product-title">RION crossbody bag for women, soft, elastic high quality PU leather</h5>
+                    <p class="product-price">Price: <del>9999,000$</del> 1999,000$</p>
+                    <a href="./dathang.html" class="buy-btn">See Details</a>
+                </div>
+               <div class="product-card col-3 zoom-hover p-4 bg-light border rounded">
+                    <img src="./img/3.jpg" alt="do nu">
+                    <h5 class="product-title">Men's fashion backpack, multi-function, large capacity</h5>
+                    <p class="product-price">Price: <del>9999,000$</del> 1999,000$</p>
+                    <a href="./dathang.html" class="buy-btn">See Details</a>
+                </div>
+               <div class="product-card col-3 zoom-hover p-4 bg-light border rounded">
+                    <img src="./img/4.jpg" alt="do nu">
+                    <h5 class="product-title">Luxury and classy men's watches, big brands</h5>
+                    <p class="product-price">Price: <del>9999,000$</del> 1999,000$</p>
+                    <a href="./dathang.html" class="buy-btn">See Details</a>
+                </div>
+            </div>
+            <!-- Nút phải -->
+            <button class="scroll-btn right btn btn-light shadow" onclick="scrollProducts2(1)">
+                &#10095;
+            </button>
+        </section>
+        <section class="product-section">
+            <!-- Nút trái -->
+            <button class="scroll-btn left btn btn-light shadow" onclick="scrollProducts3(-1)">
+                &#10094;
+            </button>
+
+            <h5 class="title-product">Shoes</h5>
+
+            <div id="productScroll3"
+                class="product-list product-scroll-wrapper overflow-auto pb-3 d-flex scroll-smooth">
+
+               <div class="product-card col-3 zoom-hover p-4 bg-light border rounded">
+                    <img src="./img/5.jpg" alt="do nu">
+                    <h5 class="product-title">Elegant and easy to match women's shoes</h5>
+                    <p class="product-price">Price: <del>9999,000$</del> 1999,000$</p>
+                    <a href="./dathang.html" class="buy-btn">See Details</a>
+                </div>
+               <div class="product-card col-3 zoom-hover p-4 bg-light border rounded">
+                    <img src="./img/6.jpg" alt="do nu">
+                    <h5 class="product-title">Luxury men's shoes easy to match</h5>
+                    <p class="product-price">Price: <del>9999,000$</del> 1999,000$</p>
+                    <a href="./dathang.html" class="buy-btn">See Details</a>
+                </div>
+               <div class="product-card col-3 zoom-hover p-4 bg-light border rounded">
+                    <img src="./img/7.jpg" alt="do nu">
+                    <h5 class="product-title">Luxury men's shoes easy to match</h5>
+                    <p class="product-price">Price: <del>9999,000$</del> 1999,000$</p>
+                    <a href="./dathang.html" class="buy-btn">See Details</a>
+                </div>
+               <div class="product-card col-3 zoom-hover p-4 bg-light border rounded">
+                    <img src="./img/8.jpg" alt="do nu">
+                    <h5 class="product-title">Luxury men's shoes easy to match</h5>
+                    <p class="product-price">Price: <del>9999,000$</del> 1999,000$</p>
+                    <a href="./dathang.html" class="buy-btn">See Details</a>
+                </div>
+               <div class="product-card col-3 zoom-hover p-4 bg-light border rounded">
+                    <img src="./img/5.jpg" alt="do nu">
+                    <h5 class="product-title">Elegant and easy to match women's shoes</h5>
+                    <p class="product-price">Price: <del>9999,000$</del> 1999,000$</p>
+                    <a href="./dathang.html" class="buy-btn">See Details</a>
+                </div>
+               <div class="product-card col-3 zoom-hover p-4 bg-light border rounded">
+                    <img src="./img/6.jpg" alt="do nu">
+                    <h5 class="product-title">Luxury men's shoes easy to match</h5>
+                    <p class="product-price">Price: <del>9999,000$</del> 1999,000$</p>
+                    <a href="./dathang.html" class="buy-btn">See Details</a>
+                </div>
+               <div class="product-card col-3 zoom-hover p-4 bg-light border rounded">
+                    <img src="./img/7.jpg" alt="do nu">
+                    <h5 class="product-title">Luxury men's shoes easy to match</h5>
+                    <p class="product-price">Price: <del>9999,000$</del> 1999,000$</p>
+                    <a href="./dathang.html" class="buy-btn">See Details</a>
+                </div>
+               <div class="product-card col-3 zoom-hover p-4 bg-light border rounded">
+                    <img src="./img/8.jpg" alt="do nu">
+                    <h5 class="product-title">Luxury men's shoes easy to match</h5>
+                    <p class="product-price">Price: <del>9999,000$</del> 1999,000$</p>
+                    <a href="./dathang.html" class="buy-btn">See Details</a>
+                </div>
+            </div>
+            <!-- Nút phải -->
+            <button class="scroll-btn right btn btn-light shadow" onclick="scrollProducts3(1)">
+                &#10095;
+            </button>
+        </section>
+    </main>
+
+    <div class="see-more-wrapper">
+        <a href="" class="see-more-link">See More</a>
+    </div>
+
+
+</body>
+<script>
+    function scrollProducts1(direction) {
+        const container = document.getElementById("productScroll1");
+        const scrollAmount = 420;
+        container.scrollBy({
+            left: scrollAmount * direction,
+            behavior: 'smooth'
+        });
+    }
+
+    function scrollProducts2(direction) {
+        const container = document.getElementById("productScroll2");
+        const scrollAmount = 420;
+        container.scrollBy({
+            left: scrollAmount * direction,
+            behavior: 'smooth'
+        });
+    }
+    function scrollProducts3(direction) {
+        const container = document.getElementById("productScroll3");
+        const scrollAmount = 420;
+        container.scrollBy({
+            left: scrollAmount * direction,
+            behavior: 'smooth'
+        });
+    }
+</script>
+
+
+</html>

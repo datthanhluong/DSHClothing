@@ -1,0 +1,119 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
+}
+header {
+    height: 95px;
+    padding: 8px;
+    overflow: hidden;
+}
+
+.logo-dangnhap{
+    width: 50px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.img-logo {
+    height: 80px;
+    width: 100px;
+    object-fit: cover; /* tránh méo ảnh */
+}
+
+
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 5px;
+    background: #f2f2f2;
+}
+
+.search-bar input {
+    border: none;
+    background: transparent;
+    padding: 5px;
+    width: 200px;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+}
+
+.banner .support {
+    width: 80px;
+    position: relative;
+    top: -50px;
+    float: right;
+    right: 60px;
+}
+
+.intro {
+    padding: 40px;
+    background: #ffffff;
+}
+
+.intro .logo {
+    margin-bottom: 20px;
+}
+
+.intro p {
+    font-size: 16px;
+    color: #444;
+    line-height: 1.6;
+}
+
+/* cuối trang */
+footer {
+    background: #333;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 5px;
+    font-size: 14px;
+}
+
+footer h4,
+footer p,
+footer li {
+    margin: 0;
+    padding: 0;
+    line-height: 1.2; /* Giảm khoảng cách giữa các dòng */
+}
+
+
+footer div {
+    width: 30%;
+}
+
+footer h4 {
+    margin-bottom: 10px;
+}
+
+footer p, footer li {
+    color: #ddd;
+}
+

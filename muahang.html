@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>DSH Clothing - Home</title>
+    <link rel="stylesheet" href="./bootstrap-5.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./bootstrap-icons-1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./bootstrap-icons-1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./css/muahang.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            fetch("./footer.html").then(response => response.text()).then(data => {
+                document.body.insertAdjacentHTML("beforeend", data);
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="header d-flex align-items-center row">
+            <div class="d-flex align-items-center cart col-5">
+                <a href="./trangchu.html">
+                    <img src="./img/logo.png" alt="logo"></a>
+                <div class="doc"></div>
+                <h5 class="buy-cart m-0">DHS Payment</h5>
+            </div>
+            <div class="col-5">
+            </div>
+            <div class="account col-2">
+                <h5></h5>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="address-box">
+        <div class="address-title">
+            <i class="bi bi-geo-alt-fill"></i>Delivery address
+        </div>
+        <div class="address-content">
+            <strong>Đ At (+84) 332020652</strong>
+            <span class="address-detail">
+                Xom 9, luu xa E5, Xa Nghi Phong, Huyen Nghi Loc, Nghe An
+            </span>
+            <span class="default-tag">Default</span>
+            <a href="#" class="change-link">Change</a>
+        </div>
+    </div>
+    <div class="cart-container">
+        <h5>Product</h5>
+
+        <div class="product-item">
+            <div class="shop-info">
+                <span class="tag">Favourite</span>
+                <a href="#" class="chat-now">💬 Chat now</a>
+            </div>
+
+            <div class="product-detail">
+                <img src="./img/aophongnu1.jpg" alt="Ảnh sản phẩm" class="product-img" />
+                <div class="product-desc d-flex">
+                    <p class="product-name">Women's Long Sleeve Shirt</p>
+                    <p class="product-type ms-5">Size: L</p>
+                </div>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Unit price</th>
+                            <th>Quantity</th>
+                            <th>Amount</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="text-center">299,000$</td>
+                            <td class="text-center">1</td>
+                            <td class="text-center">299,000$</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <hr class="my-3 border-dark">
+
+        <div class="voucher my-4 row">
+            <span class="col-5"></span>
+            <span class="col-2">🎫 Purchase voucher</span>
+            <a href="#" class=" col-5 text-end text-primary text-decoration-none">Select Vouchers</a>
+        </div>
+
+
+        <div class="d-flex border p-3" style="background-color: #f9fcff;">
+
+            <!-- Cột trái: Lời nhắn -->
+            <div class="pe-4" style="width: 35%;">
+                <label class="form-label fw-semibold">Message</label>
+                <input type="text" class="form-control" placeholder="Note for shop">
+            </div>
+
+            <!-- Đường kẻ dọc -->
+            <div style="width: 1px; background-color: #ddd;"></div>
+
+            <div class="ps-4 flex-grow-1">
+
+                <div class="d-flex">
+                    <div style="white-space: nowrap;">
+                        <span class="fw-semibold">Shipping method:</span>
+                    </div>
+                    <div class="">
+                        <div class="d-flex justify-content-between">
+                            <span class="ms-1">Fast</span>
+                            <a href="#" class="text-primary text-decoration-none">Change</a>
+                            <span class="fw-semibold">₫42.500</span>
+                        </div>
+                        <div class="text-muted small">
+                            Guaranteed delivery from<strong>May 26 - May 29</strong><br>
+                            Get a 15,000 VND Voucher if your order is delivered after May 29, 2025
+                        </div>
+                    </div>
+                </div>
+
+                <div class="border-top pt-2 mt-2 small">
+                    Or select Save to 🚚<a href="#" class="text-decoration-none text-success fw-semibold">Guaranteed
+                        Delivery
+                        May 27 - May 28</a>
+                </div>
+
+                <div class="mt-2 small text-muted">
+                    Checked together<span title="Thông tin thêm">ⓘ</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="container border p-3 my-3 bg-white">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <h6 class="mb-0 fw-bold">Payment method</h6>
+                <div class="d-flex">
+                    <p class="me-4">Cash on Delivery</span></p>
+                    <a href="#" class="text-primary text-decoration-none">Change</a>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="d-flex justify-content-between text-muted mb-2">
+                <span>Total cost of goods</span>
+                <span>299,000$</span>
+            </div>
+            <div class="d-flex justify-content-between text-muted mb-2">
+                <span>Total shipping cost</span>
+                <span>0$</span>
+            </div>
+            <div class="d-flex justify-content-between align-items-center">
+                <strong class="fs-5">Total payment</strong>
+                <strong class="fs-4 text-danger">299,000$</strong>
+            </div>
+
+            <hr>
+
+            <div class="text-end">
+                <button class="btn btn-danger px-5 py-2" onclick="showToast()">Order</button>
+            </div>
+        </div>
+
+    </div>
+    <!-- thông bao -->
+    <div id="toast" class="toast">Order Successfully</div>
+</body>
+<script>function showToast() {
+        const toast = document.getElementById("toast");
+        toast.classList.add("show");
+
+        setTimeout(() => {
+            toast.classList.remove("show");
+        }, 2000);
+    }</script>
+
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>DSH Clothing - Home</title>
+    <link rel="stylesheet" href="./bootstrap-5.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./bootstrap-icons-1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./bootstrap-icons-1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./css/hotro.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            fetch("./footer.html").then(response => response.text()).then(data => {
+                document.body.insertAdjacentHTML("beforeend", data);
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+    <header>
+        <div class="header d-flex align-items-center row">
+            <div class="d-flex align-items-center cart col-5">
+                <a href="./trangchu.html">
+                    <img src="./img/logo.png" alt="logo"></a>
+                <div class="doc"></div>
+                <h5 class="buy-cart m-0">DSH Help Center</h5>
+            </div>
+            <div class="col-5">
+            </div>
+            <div class="account col-2">
+                <h5>DSH policy</h5>
+            </div>
+        </div>
+    </header>
+    <div class="search-section py-4 mx">
+        <div class="family py-4">
+            <h1 class="d-flex justify-content-center align-items-center">Hello, how can DSH help you?</h1>
+        </div>
+
+        <form class="input-group search-input mx-auto border border-dark rounded ">
+            <input type="text" class="form-control d-flex justify-content-center "
+                placeholder="Enter keywords or content to search">
+            <button class="btn btn-search" type="submit">
+                <i class="bi bi-search"></i>
+            </button>
+
+        </form>
+    </div>
+    <div class="container">
+        <div class="title m-5">Category</div>
+        <div class="grid m-5">
+            <div class="card">
+                <img src="https://img.icons8.com/ios-filled/50/shopping-bag.png" class="icon" />
+                <div class="text"><b>Shopping Together DSH</b></div>
+            </div>
+            <div class="card">
+                <img src="https://img.icons8.com/ios-filled/50/sale.png" class="icon" />
+                <div class="text"><b>Promotions & Offers</b></div>
+            </div>
+            <div class="card">
+                <img src="https://img.icons8.com/ios-filled/50/wallet.png" class="icon" />
+                <div class="text"><b>Pay</b></div>
+            </div>
+            <div class="card">
+                <img src="https://img.icons8.com/ios-filled/50/delivery.png" class="icon" />
+                <div class="text"><b>Orders & Shipping</b></div>
+            </div>
+            <div class="card">
+                <img src="https://img.icons8.com/ios-filled/50/refund.png" class="icon" />
+                <div class="text"><b>Returns & Refunds</b></div>
+            </div>
+            <div class="card">
+                <img src="https://img.icons8.com/ios-filled/50/info.png" class="icon" />
+                <div class="text"><b>General information</b></div>
+            </div>
+        </div>
+    </div>
+    <h2>Frequently asked questions</h2>
+
+    <div class="faq-list container">
+        <div class="faq-item">
+            <h5 href="#">[Scam Alert] Shop Safely with Shopee</h5>
+        </div>
+        <div class="faq-item">
+            <h5 href="#">[New Member] Why can't I register for a Shopee account using my phone number?</h5>
+        </div>
+        <div class="faq-item">
+            <h5 href="#">[Returns] How to pack a return order</h5>
+        </div>
+        <div class="faq-item">
+            <h5 href="#">[Shipping] What is the Shipping Method for Delivery to Pickup Box?</h5>
+        </div>
+        <div class="faq-item">
+            <h5 href="#">[Error] How to handle when the system cannot verify my Shopee account to log in?</h5>
+        </div>
+        <div class="faq-item">
+            <h5 href="#">[Refund] How long does it take to get my money back after a successful return?</h5>
+        </div>
+        <div class="faq-item">
+            <h5 href="#">[Return/Refund] What are the return instructions after your Return/Refund request is accepted?
+            </h5>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>DSH Clothing - Home</title>
+    <link rel="stylesheet" href="./css/trangchu.css">
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            fetch("./head.html").then(response => response.text()).then(data => {
+                document.head.innerHTML += data;
+            });
+
+            fetch("./header.html").then(response => response.text()).then(data => {
+                document.body.insertAdjacentHTML("afterbegin", data);
+            });
+
+            fetch("./footer.html").then(response => response.text()).then(data => {
+                document.body.insertAdjacentHTML("beforeend", data);
+            });
+        });
+    </script>
+
+</head>
+
+
+<body>
+
+    <section class="banner">
+        <div class="slider-track" id="sliderTrack">
+            <img src="./img/biatrangchu5.png" alt="anh">
+            <img src="./img/biatrangchu6.png" alt="anh">
+            <img src="./img/biatrangchu7.png" alt="anh">
+        </div>
+        <a href="./hotro.html"><img src="./img/support.png" class="support zoom-link fw-bold"></a>
+    </section>
+
+
+
+    <!-- Product Catalog -->
+    <main class="product-catalog">
+        <h3 class="title-product-catalog">Product Catalog</h3>
+
+        <!-- quần áo: nam-->
+        <section class="product-section ">
+            <!-- Nút trái -->
+            <button class="scroll-btn left btn btn-light shadow" onclick="scrollProducts1(-1)">
+                &#10094;
+            </button>
+
+            <h5 class="title-product">Men's Clothing </h5>
+
+            <div id="productScroll1" class="product-list product-scroll-wrapper overflow-auto pb-3 d-flex ">
+
+                <div class="product-card col-3 zoom-hover p-4 bg-light border rounded">
+                    <img src="./img/aophongnam.jpg" alt="áo nam 1">
+                    <h5 class="product-title">Men's T-shirt</h5>
+                    <p class="product-price">
+                        Price: <del>299,000$</del> 199,000$
+                    </p>
+
+                    <a href="./dathang.html" class="buy-btn">See Details</a>
+                </div>
+
+                <div class="product-card col-3 zoom-hover p-4 bg-light border rounded">
+                    <img src="./img/bothethao.jpg" alt="áo nam 1">
+                    <h5 class="product-title">Men's Sportswear</h5>
+                    <p class="product-price">
+                        Price: <del>499,000$</del> 399,000$
+                    </p>
+
+
+                    <a href="./dathang.html" class="buy-btn">See Details</a>
+                </div>
+
+                <div class="product-card col-3 zoom-hover p-4 bg-light border rounded">
+                    <img src="./img/sominam.jpg" alt="áo nam 1">
+                    <h5 class="product-title">Men's Shirt</h5>
+                    <p class="product-price">
+                        Price: <del>499,000$</del> 399,000$
+                    </p>
+
+                    <a href="./dathang.html" class="buy-btn">See Details</a>
+                </div>
+
+                <div class="product-card col-3 zoom-hover p-4 bg-light border rounded">
+                    <img src="./img/quannam.jpg" alt="áo nam 1">
+                    <h5 class="product-title">Men's Pants
+                    </h5>
+                    <p class="product-price">
+                        Price: <del>399,000$</del> 199,000$
+                    </p>
+
+                    <a href="./dathang.html" class="buy-btn">See Details</a>
+                </div>
+                <div class="product-card col-3 zoom-hover p-4 bg-light border rounded">
+                    <img src="./img/aophongnam.jpg" alt="áo nam 1">
+                    <h5 class="product-title">Men's T-shirt</h5>
+                    <p class="product-price">
+                        Price: <del>299,000$</del> 199,000$
+                    </p>
+
+                    <a href="./dathang.html" class="buy-btn">See Details</a>
+                </div>
+
+                <div class="product-card col-3 zoom-hover p-4 bg-light border rounded">
+                    <img src="./img/bothethao.jpg" alt="áo nam 1">
+                    <h5 class="product-title">Men's Sportswear
+                    </h5>
+                    <p class="product-price">
+                        Price: <del>199,000$</del> 99,000$
+                    </p>
+
+
+                    <a href="./dathang.html" class="buy-btn">See Details</a>
+                </div>
+
+                <div class="product-card col-3 zoom-hover p-4 bg-light border rounded">
+                    <img src="./img/sominam.jpg" alt="áo nam 1">
+                    <h5 class="product-title">Men's Shirt</h5>
+                    <p class="product-price">
+                        Price: <del>299,000$</del> 199,000$
+                    </p>
+
+                    <a href="./dathang.html" class="buy-btn">See Details</a>
+                </div>
+
+                <div class="product-card col-3 zoom-hover p-4 bg-light border rounded">
+                    <img src="./img/quannam.jpg" alt="áo nam 1">
+                    <h5 class="product-title">Men's Pants
+                    </h5>
+                    <p class="product-price">
+                        Price: <del>399,000$</del> 199,000$
+                    </p>
+
+                    <a href="./dathang.html" class="buy-btn">See Details</a>
+                </div>
+
+                <div class="product-card col-3 zoom-hover p-4 bg-light border rounded">
+                    <img src="./img/aophongnam.jpg" alt="áo nam 1">
+                    <h5 class="product-title">Men's T-shirt</h5>
+                    <p class="product-price">
+                        Price: <del>299,000$</del> 199,000$
+                    </p>
+
+                    <a href="./dathang.html" class="buy-btn">See Details</a>
+                </div>
+
+                <div class="product-card col-3 zoom-hover p-4 bg-light border rounded">
+                    <img src="./img/bothethao.jpg" alt="áo nam 1">
+                    <h5 class="product-title">Men's Sportswear
+                    </h5>
+                    <p class="product-price">
+                        Price: <del>199,000$</del> 99,000$
+                    </p>
+
+                    <a href="./dathang.html" class="buy-btn">See Details</a>
+                </div>
+                <!-- Nút phải -->
+                <button class="scroll-btn right btn btn-light shadow" onclick="scrollProducts1(1)">
+                    &#10095;
+                </button>
+        </section>
+
+        <!-- Section: quần áo nữ -->
+        <section class="product-section">
+            <!-- Nút trái -->
+            <button class="scroll-btn left btn btn-light shadow" onclick="scrollProducts2(-1)">
+                &#10094;
+            </button>
+            <h5 class="title-product">Women's Clothing </h5>
+            <div id="productScroll2" class="product-list product-scroll-wrapper overflow-auto pb-3 d-flex ">
+
+                <div class="product-card col-3 zoom-hover p-4 bg-light border rounded">
+                    <img src="./img/aophongnu.jpg" alt="áo nu 1">
+                    <h5 class="product-title">Women's T-shirts</h5>
+                    <p class="product-price">
+                        Price: <del>299,000$</del> 199,000$
+                    </p>
+
+                    <a href="./dathang.html" class="buy-btn">See Details</a>
+                </div>
+
+                <div class="product-card col-3 zoom-hover p-4 bg-light border rounded">
+                    <img src="./img/aophongnu1.jpg" alt="áo nu 2">
+                    <h5 class="product-title">Women's T-shirts</h5>
+                    <p class="product-price">
+                        Price: <del>399,000$</del> 199,000$
+                    </p>
+
+                    <a href="./dathang.html" class="buy-btn">See Details</a>
+                </div>
+
+                <div class="product-card col-3 zoom-hover p-4 bg-light border rounded">
+                    <img src="./img/thoitrangnu.jpg" alt="áo nu 3">
+                    <h5 class="product-title">Elegant Women's Shirt Set
+                    </h5>
+                    <p class="product-price">
+                        Price: <del>399,000$</del> 199,000$
+                    </p>
+
+                    <a href="./dathang.html" class="buy-btn">See Details</a>
+                </div>
+
+                <div class="product-card col-3 zoom-hover p-4 bg-light border rounded">
+                    <img src="./img/thoitrangnu1.jpg" alt="áo nu 4">
+                    <h5 class="product-title">Women's Sweater</h5>
+                    <p class="product-price">
+                        Price: <del>399,000$</del> 199,000$
+                    </p>
+
+                    <a href="#" class="buy-btn">See Details</a>
+                </div>
+                <div class="product-card col-3 zoom-hover p-4 bg-light border rounded">
+                    <img src="./img/aophongnu.jpg" alt="áo nu 1">
+                    <h5 class="product-title">Women's T-shirts</h5>
+                    <p class="product-price">
+                        Price: <del>299,000$</del> 199,000$
+                    </p>
+
+                    <a href="./dathang.html" class="buy-btn">See Details</a>
+                </div>
+
+                <div class="product-card col-3 zoom-hover p-4 bg-light border rounded">
+                    <img src="./img/aophongnu1.jpg" alt="áo nu 2">
+                    <h5 class="product-title">Women's T-shirts</h5>
+                    <p class="product-price">
+                        Price: <del>399,000$</del> 199,000$
+                    </p>
+
+                    <a href="./dathang.html" class="buy-btn">See Details</a>
+                </div>
+
+                <div class="product-card col-3 zoom-hover p-4 bg-light border rounded">
+                    <img src="./img/thoitrangnu.jpg" alt="áo nu 3">
+                    <h5 class="product-title">Elegant Women's Shirt Set
+                    </h5>
+                    <p class="product-price">
+                        Price: <del>399,000$</del> 199,000$
+                    </p>
+
+                    <a href="./dathang.html" class="buy-btn">See Details</a>
+                </div>
+
+                <div class="product-card col-3 zoom-hover p-4 bg-light border rounded">
+                    <img src="./img/thoitrangnu1.jpg" alt="áo nu 4">
+                    <h5 class="product-title">Women's Sweater</h5>
+                    <p class="product-price">
+                        Price: <del>399,000$</del> 199,000$
+                    </p>
+
+                    <a href="#" class="buy-btn">See Details</a>
+                </div>
+            </div>
+            <!-- Nút phải -->
+            <button class="scroll-btn right btn btn-light shadow" onclick="scrollProducts2(1)">
+                &#10095;
+            </button>
+        </section>
+
+        <!-- Section: đồ trẻ em -->
+        <section class="product-section">
+            <!-- Nút trái -->
+            <button class="scroll-btn left btn btn-light shadow" onclick="scrollProducts3(-1)">
+                &#10094;
+            </button>
+            <h5 class="title-product">Children's clothes </h5>
+            <div id="productScroll3" class="product-list product-scroll-wrapper overflow-auto pb-3 d-flex ">
+
+                <div class="product-card col-3 zoom-hover p-4 bg-light border rounded">
+                    <img src="./img/treem1.jpg" alt="áo trẻ em">
+                    <h5 class="product-title">Children's Clothing</h5>
+                    <p class="product-price">
+                        Price: <del>599,000$</del> 499,000$
+                    </p>
+
+                    <a href="./dathang.html" class="buy-btn">See Details</a>
+                </div>
+
+                <div class="product-card col-3 zoom-hover p-4 bg-light border rounded">
+                    <img src="./img/treem2.jpg" alt="áo trẻ em">
+                    <h5 class="product-title">Children's Clothing</h5>
+                    <p class="product-price">
+                        Price: <del>499,000$</del> 399,000$
+                    </p>
+
+                    <a href="./dathang.html" class="buy-btn">See Details</a>
+                </div>
+
+                <div class="product-card col-3 zoom-hover p-4 bg-light border rounded">
+                    <img src="./img/treem3.jpg" alt="áo trẻ em">
+                    <h5 class="product-title">Children's Clothing
+                    </h5>
+                    <p class="product-price">
+                        Price: <del>499,000$</del> 399,000$
+                    </p>
+
+                    <a href="./dathang.html" class="buy-btn">See Details</a>
+                </div>
+
+                <div class="product-card col-3 zoom-hover p-4 bg-light border rounded">
+                    <img src="./img/treem4.jpg" alt="áo trẻ em">
+                    <h5 class="product-title">Children's Clothing
+                    </h5>
+                    <p class="product-price">
+                        Price: <del>499,000$</del> 399,000$
+                    </p>
+
+                    <a href="#" class="buy-btn">See Details</a>
+                </div>
+
+                <div class="product-card col-3 zoom-hover p-4 bg-light border rounded">
+                    <img src="./img/treem1.jpg" alt="áo trẻ em">
+                    <h5 class="product-title">Children's Clothing</h5>
+                    <p class="product-price">
+                        Price: <del>599,000$</del> 499,000$
+                    </p>
+
+                    <a href="./dathang.html" class="buy-btn">See Details</a>
+                </div>
+
+                <div class="product-card col-3 zoom-hover p-4 bg-light border rounded">
+                    <img src="./img/treem2.jpg" alt="áo trẻ em">
+                    <h5 class="product-title">Children's Clothing</h5>
+                    <p class="product-price">
+                        Price: <del>499,000$</del> 399,000$
+                    </p>
+
+                    <a href="./dathang.html" class="buy-btn">See Details</a>
+                </div>
+
+                <div class="product-card col-3 zoom-hover p-4 bg-light border rounded">
+                    <img src="./img/treem3.jpg" alt="áo trẻ em">
+                    <h5 class="product-title">Children's Clothing
+                    </h5>
+                    <p class="product-price">
+                        Price: <del>499,000$</del> 399,000$
+                    </p>
+
+                    <a href="./dathang.html" class="buy-btn">See Details</a>
+                </div>
+
+                <div class="product-card col-3 zoom-hover p-4 bg-light border rounded">
+                    <img src="./img/treem4.jpg" alt="áo trẻ em">
+                    <h5 class="product-title">Children's Clothing
+                    </h5>
+                    <p class="product-price">
+                        Price: <del>499,000$</del> 399,000$
+                    </p>
+
+                    <a href="#" class="buy-btn">See Details</a>
+                </div>
+            </div>
+            <!-- Nút phải -->
+            <button class="scroll-btn right btn btn-light shadow" onclick="scrollProducts3(1)">
+                &#10095;
+            </button>
+        </section>
+        <!-- quần áo: nam-->
+        <section class="product-section ">
+            <!-- Nút trái -->
+            <button class="scroll-btn left btn btn-light shadow" onclick="scrollProducts4(-1)">
+                &#10094;
+            </button>
+
+            <h5 class="title-product">Men's Clothing </h5>
+
+            <div id="productScroll4" class="product-list product-scroll-wrapper overflow-auto pb-3 d-flex ">
+
+                <div class="product-card col-3 zoom-hover p-4 bg-light border rounded">
+                    <img src="./img/aophongnam.jpg" alt="áo nam 1">
+                    <h5 class="product-title">Men's T-shirt</h5>
+                    <p class="product-price">
+                        Price: <del>499,000$</del> 299,000$
+                    </p>
+
+                    <a href="./dathang.html" class="buy-btn">See Details</a>
+                </div>
+
+                <div class="product-card col-3 zoom-hover p-4 bg-light border rounded">
+                    <img src="./img/bothethao.jpg" alt="áo nam 1">
+                    <h5 class="product-title">Men's Sportswear
+                    </h5>
+                    <p class="product-price">
+                        Price: <del>499,000$</del> 399,000$
+                    </p>
+
+                    <a href="./dathang.html" class="buy-btn">See Details</a>
+                </div>
+
+                <div class="product-card col-3 zoom-hover p-4 bg-light border rounded">
+                    <img src="./img/sominam.jpg" alt="áo nam 1">
+                    <h5 class="product-title">Men's Shirt</h5>
+                    <p class="product-price">
+                        Price: <del>499,000$</del> 299,000$
+                    </p>
+
+                    <a href="#" class="buy-btn">See Details</a>
+                </div>
+
+                <div class="product-card col-3 zoom-hover p-4 bg-light border rounded">
+                    <img src="./img/quannam.jpg" alt="áo nam 1">
+                    <h5 class="product-title">Men's Pants
+                    </h5>
+                    <p class="product-price">
+                        Price: <del>599,000$</del> 499,000$
+                    </p>
+
+                    <a href="./dathang.html" class="buy-btn">See Details</a>
+                </div>
+
+                <div class="product-card col-3 zoom-hover p-4 bg-light border rounded">
+                    <img src="./img/aophongnam.jpg" alt="áo nam 1">
+                    <h5 class="product-title">Men's T-shirt</h5>
+                    <p class="product-price">
+                        Price: <del>499,000$</del> 299,000$
+                    </p>
+
+                    <a href="./dathang.html" class="buy-btn">See Details</a>
+                </div>
+
+                <div class="product-card col-3 zoom-hover p-4 bg-light border rounded">
+                    <img src="./img/bothethao.jpg" alt="áo nam 1">
+                    <h5 class="product-title">Men's Sportswear
+                    </h5>
+                    <p class="product-price">
+                        Price: <del>499,000$</del> 399,000$
+                    </p>
+
+                    <a href="./dathang.html" class="buy-btn">See Details</a>
+                </div>
+
+                <div class="product-card col-3 zoom-hover p-4 bg-light border rounded">
+                    <img src="./img/sominam.jpg" alt="áo nam 1">
+                    <h5 class="product-title">Men's Shirt</h5>
+                    <p class="product-price">
+                        Price: <del>499,000$</del> 299,000$
+                    </p>
+
+                    <a href="#" class="buy-btn">See Details</a>
+                </div>
+
+                <div class="product-card col-3 zoom-hover p-4 bg-light border rounded">
+                    <img src="./img/quannam.jpg" alt="áo nam 1">
+                    <h5 class="product-title">Men's Pants
+                    </h5>
+                    <p class="product-price">
+                        Price: <del>599,000$</del> 499,000$
+                    </p>
+
+                    <a href="./dathang.html" class="buy-btn">See Details</a>
+                </div>
+            </div>
+            <!-- Nút phải -->
+            <button class="scroll-btn right btn btn-light shadow" onclick="scrollProducts4(1)">
+                &#10095;
+            </button>
+        </section>
+    </main>
+    <div class="see-more-wrapper">
+        <a href="" class="see-more-link">See More</a>
+    </div>
+
+</body>
+<script>
+    function scrollProducts1(direction) {
+        const container = document.getElementById("productScroll1");
+        const scrollAmount = 240;
+        container.scrollBy({
+            left: scrollAmount * direction,
+            behavior: 'smooth'
+        });
+    }
+    function scrollProducts2(direction) {
+        const container = document.getElementById("productScroll2");
+        const scrollAmount = 240;
+        container.scrollBy({
+            left: scrollAmount * direction,
+            behavior: 'smooth'
+        });
+    }
+    function scrollProducts3(direction) {
+        const container = document.getElementById("productScroll3");
+        const scrollAmount = 240;
+        container.scrollBy({
+            left: scrollAmount * direction,
+            behavior: 'smooth'
+        });
+    }
+    function scrollProducts4(direction) {
+        const container = document.getElementById("productScroll4");
+        const scrollAmount = 240;
+        container.scrollBy({
+            left: scrollAmount * direction,
+            behavior: 'smooth'
+        });
+    }
+    const track = document.getElementById('sliderTrack');
+    const slides = track.children;
+    const totalSlides = slides.length;
+    let current = 0;
+
+    const firstClone = slides[0].cloneNode(true);
+    track.appendChild(firstClone);
+
+    function nextSlide() {
+        current++;
+        track.style.transition = 'transform 0.5s ease-in-out';
+        track.style.transform = `translateX(-${current * 100}%)`;
+
+        if (current === totalSlides) {
+            setTimeout(() => {
+                track.style.transition = 'none';
+                track.style.transform = `translateX(0)`;
+                current = 0;
+            }, 500);
+        }
+    }
+
+    setInterval(nextSlide, 6000);
+</script>
+
+</html>

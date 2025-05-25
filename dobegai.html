@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>DSH Clothing - Home</title>
+    <link rel="stylesheet" href="./css/dobegai.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            fetch("./head.html").then(response => response.text()).then(data => {
+                document.head.innerHTML += data;
+            });
+
+            fetch("./header.html").then(response => response.text()).then(data => {
+                document.body.insertAdjacentHTML("afterbegin", data);
+            });
+
+            fetch("./footer.html").then(response => response.text()).then(data => {
+                document.body.insertAdjacentHTML("beforeend", data);
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+
+    <!-- Banner -->
+    <section class="banner">
+        <img src="./img/biatreem.png" alt="anh">
+        <a href="./hotro.html"><img src="./img/support.png" class="support zoom-link fw-bold"></a>
+    </section>
+    <!-- Product Catalog -->
+    <main class="product-catalog">
+        <h3 class="title-product-catalog">Baby Girl Clothes</h3>
+        <section class="product-section">
+            <!-- Nút trái -->
+            <button class="scroll-btn left btn btn-light shadow" onclick="scrollProducts1(-1)">
+                &#10094;
+            </button>
+            <h5 class="title-product">Baby Girl Sweater</h5>
+            <div id="productScroll1"
+                class="product-list product-scroll-wrapper overflow-auto pb-3 d-flex scroll-smooth">
+
+
+               <div class="product-card col-3 zoom-hover p-4 bg-light border rounded">
+                    <img src="./img/dobegai1.jpg" alt="">
+                    <h5 class="product-title">Cute Baby Girl Clothes</h5>
+                    <p class="product-price">Price: <del>499,000$</del> 399,000$</p>
+                    <a href="./dathang.html" class="buy-btn">See Details</a>
+                </div>
+               <div class="product-card col-3 zoom-hover p-4 bg-light border rounded">
+                    <img src="./img/dobegai2.jpg" alt="">
+                    <h5 class="product-title">Baby Wool Coat</h5>
+                    <p class="product-price">Price: <del>499,000$</del> 399,000$</p>
+                    <a href="./dathang.html" class="buy-btn">See Details</a>
+                </div>
+               <div class="product-card col-3 zoom-hover p-4 bg-light border rounded">
+                    <img src="./img/dobegai3.jpg" alt="">
+                    <h5 class="product-title">Pearl Gray Sweater</h5>
+                    <p class="product-price">Price: <del>499,000$</del> 399,000$</p>
+                    <a href="./dathang.html" class="buy-btn">See Details</a>
+                </div>
+               <div class="product-card col-3 zoom-hover p-4 bg-light border rounded">
+                    <img src="./img/dobegai4.jpg" alt="">
+                    <h5 class="product-title">Pink Dress For Baby</h5>
+                    <p class="product-price">Price: <del>499,000$</del> 399,000$</p>
+                    <a href="./dathang.html" class="buy-btn">See Details</a>
+                </div>
+               <div class="product-card col-3 zoom-hover p-4 bg-light border rounded">
+                    <img src="./img/dobegai1.jpg" alt="">
+                    <h5 class="product-title">Cute Baby Girl Clothes</h5>
+                    <p class="product-price">Price: <del>499,000$</del> 399,000$</p>
+                    <a href="./dathang.html" class="buy-btn">See Details</a>
+                </div>
+               <div class="product-card col-3 zoom-hover p-4 bg-light border rounded">
+                    <img src="./img/dobegai2.jpg" alt="">
+                    <h5 class="product-title">Baby Wool Coat</h5>
+                    <p class="product-price">Price: <del>499,000$</del> 399,000$</p>
+                    <a href="./dathang.html" class="buy-btn">See Details</a>
+                </div>
+               <div class="product-card col-3 zoom-hover p-4 bg-light border rounded">
+                    <img src="./img/dobegai3.jpg" alt="">
+                    <h5 class="product-title">Pearl Gray Sweater</h5>
+                    <p class="product-price">Price: <del>499,000$</del> 399,000$</p>
+                    <a href="./dathang.html" class="buy-btn">See Details</a>
+                </div>
+               <div class="product-card col-3 zoom-hover p-4 bg-light border rounded">
+                    <img src="./img/dobegai4.jpg" alt="">
+                    <h5 class="product-title">Pink Dress For Baby</h5>
+                    <p class="product-price">Price: <del>499,000$</del> 399,000$</p>
+                    <a href="./dathang.html" class="buy-btn">See Details</a>
+                </div>
+            </div>
+            <!-- Nút phải -->
+            <button class="scroll-btn right btn btn-light shadow" onclick="scrollProducts1(1)">
+                &#10095;
+            </button>
+        </section>
+        <section class="product-section">
+            <!-- Nút trái -->
+            <button class="scroll-btn left btn btn-light shadow" onclick="scrollProducts1(-1)">
+                &#10094;
+            </button>
+            <h5 class="title-product">Baby Clothes At Home</h5>
+            <div id="productScroll2"
+                class="product-list product-scroll-wrapper overflow-auto pb-3 d-flex scroll-smooth">
+               <div class="product-card col-3 zoom-hover p-4 bg-light border rounded">
+                    <img src="./img/dobegai5.jpg" alt="">
+                    <h5 class="product-title">Long Sleeve Pajamas For Baby</h5>
+                    <p class="product-price">Price: <del>499,000$</del> 399,000$</p>
+                    <a href="./dathang.html" class="buy-btn">See Details</a>
+                </div>
+               <div class="product-card col-3 zoom-hover p-4 bg-light border rounded">
+                    <img src="./img/dobegai6.jpg" alt="">
+                    <h5 class="product-title">Cute Baby Girl Clothes</h5>
+                    <p class="product-price">Price: <del>499,000$</del> 399,000$</p>
+                    <a href="./dathang.html" class="buy-btn">See Details</a>
+                </div>
+               <div class="product-card col-3 zoom-hover p-4 bg-light border rounded">
+                    <img src="./img/dobegai7.jpg" alt="">
+                    <h5 class="product-title">Erkek Bebek Patikili</h5>
+                    <p class="product-price">Price: <del>499,000$</del> 399,000$</p>
+                    <a href="./dathang.html" class="buy-btn">See Details</a>
+                </div>
+               <div class="product-card col-3 zoom-hover p-4 bg-light border rounded">
+                    <img src="./img/dobegai8.jpg" alt="">
+                    <h5 class="product-title">Cute Baby Girl Clothes</h5>
+                    <p class="product-price">Price: <del>499,000$</del> 399,000$</p>
+                    <a href="./dathang.html" class="buy-btn">See Details</a>
+                </div>
+               <div class="product-card col-3 zoom-hover p-4 bg-light border rounded">
+                    <img src="./img/dobegai5.jpg" alt="">
+                    <h5 class="product-title">Long Sleeve Pajamas For Baby</h5>
+                    <p class="product-price">Price: <del>499,000$</del> 399,000$</p>
+                    <a href="./dathang.html" class="buy-btn">See Details</a>
+                </div>
+               <div class="product-card col-3 zoom-hover p-4 bg-light border rounded">
+                    <img src="./img/dobegai6.jpg" alt="">
+                    <h5 class="product-title">Cute Baby Girl Clothes</h5>
+                    <p class="product-price">Price: <del>499,000$</del> 399,000$</p>
+                    <a href="./dathang.html" class="buy-btn">See Details</a>
+                </div>
+               <div class="product-card col-3 zoom-hover p-4 bg-light border rounded">
+                    <img src="./img/dobegai7.jpg" alt="">
+                    <h5 class="product-title">Erkek Bebek Patikili</h5>
+                    <p class="product-price">Price: <del>499,000$</del> 399,000$</p>
+                    <a href="./dathang.html" class="buy-btn">See Details</a>
+                </div>
+               <div class="product-card col-3 zoom-hover p-4 bg-light border rounded">
+                    <img src="./img/dobegai8.jpg" alt="">
+                    <h5 class="product-title">Cute Baby Girl Clothes</h5>
+                    <p class="product-price">Price: <del>499,000$</del> 399,000$</p>
+                    <a href="./dathang.html" class="buy-btn">See Details</a>
+                </div>
+            </div>
+            <!-- Nút phải -->
+            <button class="scroll-btn right btn btn-light shadow" onclick="scrollProducts2(1)">
+                &#10095;
+            </button>
+        </section>
+    </main>
+    <div class="see-more-wrapper">
+        <a href="" class="see-more-link">See More</a>
+    </div>
+
+    <script>
+        function scrollProducts1(direction) {
+            const container = document.getElementById("productScroll1");
+            const scrollAmount = 420; // mỗi lần cuộn 1 sản phẩm (200px + khoảng cách)
+            container.scrollBy({
+                left: scrollAmount * direction,
+                behavior: 'smooth'
+            });
+        }
+        function scrollProducts2(direction) {
+            const container = document.getElementById("productScroll2");
+            const scrollAmount = 420; // mỗi lần cuộn 1 sản phẩm (200px + khoảng cách)
+            container.scrollBy({
+                left: scrollAmount * direction,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+</body>
+
+</html>

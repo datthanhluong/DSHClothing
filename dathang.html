@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>DSH Clothing - Home</title>
+  <link rel="stylesheet" href="./bootstrap-5.0.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./bootstrap-icons-1.11.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="./bootstrap-icons-1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="./css/dathang.css">
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+      fetch("./header.html").then(response => response.text()).then(data => {
+        document.body.insertAdjacentHTML("afterbegin", data);
+      });
+
+      fetch("./footer.html").then(response => response.text()).then(data => {
+        document.body.insertAdjacentHTML("beforeend", data);
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <!-- thông bao -->
+  <div id="toast" class="toast">🛒 Add to cart successfully!</div>
+
+  <!-- Product Detail -->
+  <div class="product-container">
+    <img class="product-image" src="./img/aophongnu1.jpg" alt="Product Image">
+
+    <div class="product-details mt-3">
+      <h3 class="mb-3">Women's Long Sleeve Shirt</h3>
+      <h5 class="mb-3"><strong>Price:</strong> 299,000$ </h5>
+
+      <div class="mb-3 d-flex align-items-center">
+        <h6 class="m-0 fw-bold" style="min-width: 100px;">Transport:</h6>
+
+        <div class="d-flex align-items-center m-0">
+          <i class=" m-0 bi bi-truck text-info me-2"></i>
+          <h6 class="m-0 text-dark">Received <strong> May 9</strong> - <strong>May 10</strong></h6>
+          <i class="bi bi-chevron-right ms-2"></i>
+
+          <h6 class="m-0 text-dark fw-semibold">Free shipping</h6>
+        </div>
+      </div>
+
+
+      <div class="btn-size mb-3 d-flex align-items-center">
+        <h6 class="m-0"><strong> Size:</strong></h6>
+        <div class="btn-group  me-3 mx-5" role="group" aria-label="Size options">
+          <input type="radio" class="btn-check" name="size" id="sizeS" autocomplete="off">
+          <label class="btn btn-outline-dark" for="sizeS">S</label>
+
+          <input type="radio" class="btn-check" name="size" id="sizeM" autocomplete="off">
+          <label class="btn btn-outline-dark" for="sizeM">M</label>
+
+          <input type="radio" class="btn-check" name="size" id="sizeL" autocomplete="off">
+          <label class="btn btn-outline-dark" for="sizeL">L</label>
+
+          <input type="radio" class="btn-check" name="size" id="sizeXL" autocomplete="off">
+          <label class="btn btn-outline-dark" for="sizeXL">XL</label>
+
+          <input type="radio" class="btn-check" name="size" id="sizeXXL" autocomplete="off">
+          <label class="btn btn-outline-dark" for="sizeXXL">XXL</label>
+        </div>
+      </div>
+
+      <div class="mb-3 d-flex align-items-center">
+        <h6 class="ms-0 form-label fw-bold mx-5">Color:</h6>
+        <div class="d-flex flex-wrap gap-2">
+
+          <!-- White -->
+          <input type="radio" class="btn-check" name="color" id="color-white" autocomplete="off">
+          <label class="btn border p-2 d-flex align-items-center" for="color-white">
+            <img src="./img/phongnu.jpg" alt="white" width="20" class="me-2">
+            <span class="text-success">White</span>
+          </label>
+
+          <!-- Pink -->
+          <input type="radio" class="btn-check" name="color" id="color-pink" autocomplete="off">
+          <label class="btn border p-2 d-flex align-items-center" for="color-pink">
+            <img src="./img/phongnu1.jpg" alt="pink" width="20" class="me-2">
+            <span class="text-primary">Pink</span>
+          </label>
+
+          <!-- Black -->
+          <input type="radio" class="btn-check" name="color" id="color-black" autocomplete="off">
+          <label class="btn border p-2 d-flex align-items-center" for="color-black">
+            <img src="./img/phongnu2.jpg" alt="black" width="20" class="me-2">
+            <span class="text-secondary">Black</span>
+          </label>
+
+          <!-- Green -->
+          <input type="radio" class="btn-check" name="color" id="color-green" autocomplete="off">
+          <label class="btn border p-2 d-flex align-items-center" for="color-green">
+            <img src="./img/phongnu3.jpg" alt="green" width="20" class="me-2">
+            <span style="color: #84d4af;">Green</span>
+          </label>
+
+        </div>
+      </div>
+
+
+      <div class="enter number d-flex align-items-center">
+        <h6 class="ms-0 mx-3"><strong>Quantity:</strong></h6>
+        <input type="number" min="0" value="0">
+      </div>
+      <br>
+      <div class="btn-cart mb-3">
+        <button class="btn btn-light custom-pink-bg me-3 btn-lg" onclick="showToast()">
+          <i class="bi bi-cart-plus"></i> Add To Cart
+        </button>
+        <a href="./muahang.html" class="btn btn-danger btn-lg">
+          <i class="bi bi-cart-check"></i> Buy Now
+        </a>
+      </div>
+
+
+      <div class="hotline">
+        <h7></h7>
+        <br>
+        <h7></h7>
+      </div>
+    </div>
+
+
+    <div class="thumbnail-wrapper">
+      <button class="scroll-btn left btn btn-light shadow" onclick="scrollProducts1(-1)">
+        &#10094;
+      </button>
+
+      <div id="productScroll1" class="thumbnail-scroll">
+        <img class="product-thumb" src="./img/phongnu.jpg" alt="Secondary Product Image">
+        <img class="product-thumb" src="./img/phongnu1.jpg" alt="Secondary Product Image">
+        <img class="product-thumb" src="./img/phongnu2.jpg" alt="Secondary Product Image">
+        <img class="product-thumb" src="./img/phongnu3.jpg" alt="Secondary Product Image">
+      </div>
+      <button class="scroll-btn right btn btn-light shadow" onclick="scrollProducts1(1)">
+        &#10095;
+      </button>
+    </div>
+  </div>
+
+  <div class="describe">
+    <h4 style="text-indent: 15px;">Product information:</h4>
+    <ul>
+      <li><strong>Product code:</strong> MPS211S4</li>
+      <li><strong>Style:</strong> Regular fit</li>
+      <li><strong>Color:</strong> White, pink, black, Green</li>
+      <li><strong>Size:</strong> S - M - L - XL - XXL - XXXL</li>
+      <li><strong>Fabric material:</strong> Polyamide <em>(Synthetic fibers are made from polymer fibers, formed through
+          the reaction of carbon in coal and crude oil at high temperatures)</em></li>
+      <li><strong>Ingredient:</strong> 85% Polyamide, 15% Spandex</li>
+    </ul>
+    <h4 style="text-indent: 15px;">Highlights</h4>
+    <h5 style="text-indent: 15px;">Design:</h5>
+    <ul>
+      <li>Polo shirts are made from stretch fabric, offering three outstanding advantages: good sweat absorption,
+        softness and 4-way stretch, providing maximum comfort for the wearer.</li>
+      <li>The shirt also exudes elegance and politeness, can replace shirts in the office environment but still retains
+        a youthful, dynamic look...</li>
+    </ul>
+    <h5 style="text-indent: 15px;">Material:</h5>
+    <ul>
+      <li>Smooth surface polyamide fabric has superior anti-friction ability, helps reduce friction on the skin, brings
+        a comfortable, pleasant feeling, does not cause discomfort to the wearer during use.</li>
+      <li>Polyamide has the ability to absorb many different colors, making the fabric more vibrant and aesthetic.
+        Thanks to that, this material easily meets all consumer needs, from sophisticated fashion designs to unique,
+        individual products.</li>
+    </ul>
+
+  </div>
+
+  <section class="product-section">
+    <h5 class="title-product">Similar Products</h5>
+    <div class="product-list pb-3 d-flex">
+
+      <div class="product-card col-3">
+        <img src="./img/tuongtu1.jpg" alt="">
+        <p>Women's Graphic T-Shirt<br>Price: 199,000$</p>
+        <a href="./dathang.html" class="buy-btn">See Details</a>
+      </div>
+      <div class="product-card col-3">
+        <img src="./img/tuongtu2.jpg" alt="">
+        <p>Women's Graphic T-Shirt<br>Price: 199,000$</p>
+        <a href="./dathang.html" class="buy-btn">See Details</a>
+      </div>
+      <div class="product-card col-3">
+        <img src="./img/tuongtu3.jpg" alt="">
+        <p>Women's Graphic T-Shirt<br>Price: 199,000$</p>
+        <a href="./dathang.html" class="buy-btn">See Details</a>
+      </div>
+      <div class="product-card col-3">
+        <img src="./img/tuongtu4.jpg" alt="">
+        <p>Women's Graphic T-Shirt<br>Price: 199,000$</p>
+        <a href="./dathang.html" class="buy-btn">See Details</a>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="product-section">
+    <h5 class="title-product">Other Products</h5>
+    <div class="product-list pb-3 d-flex">
+
+      <div class="product-card col-3">
+        <img src="./img/tuongtu5.jpg" alt="">
+        <p>Women's Graphic T-Shirt<br>Price: 199,000$</p>
+        <a href="./dathang.html" class="buy-btn">See Details</a>
+      </div>
+
+      <div class="product-card col-3">
+        <img src="./img/tuong6.jpg" alt="">
+        <p>Women's Graphic T-Shirt<br>Price: 199,000$</p>
+        <a href="./dathang.html" class="buy-btn">See Details</a>
+      </div>
+
+      <div class="product-card col-3">
+        <img src="./img/tuongtu7.jpg" alt="">
+        <p>Women's Graphic T-Shirt<br>Price: 199,000$</p>
+        <a href="./dathang.html" class="buy-btn">See Details</a>
+      </div>
+      <div class="product-card col-3">
+        <img src="./img/tuongtu8.jpg" alt="">
+        <p>Women's Graphic T-Shirt<br>Price: 199,000$</p>
+        <a href="./dathang.html" class="buy-btn">See Details</a>
+      </div>
+    </div>
+    </div>
+  </section>
+
+
+
+
+
+</body>
+<script>
+  function scrollProducts1(direction) {
+    const container = document.getElementById("productScroll1");
+    const scrollAmount = 310;
+    container.scrollBy({
+      left: scrollAmount * direction,
+      behavior: 'smooth'
+    });
+  }
+
+  function showToast() {
+    const toast = document.getElementById("toast");
+    toast.classList.add("show");
+
+    setTimeout(() => {
+      toast.classList.remove("show");
+    }, 1000);
+  }
+</script>
+
+
+</html>

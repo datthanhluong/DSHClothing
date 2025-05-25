@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 21px;
+    padding: 0;
+    background: #f5f5f5;
+}
+
+header {
+
+    width: 100%;
+    justify-content: space-between;
+    padding: 0px;
+    border-bottom: 1px solid #ccc;
+}
+
+
+header .doc {
+    width: 3px;
+    height: 44px;
+    background-color: rgb(32, 32, 32);
+    margin: 0 10px;
+}
+
+.person-icon {
+    text-decoration: none;
+    font-size: 21px;
+    display: flex;
+    align-items: center;
+}
+
+.person-icon .icon-user {
+    font-size: 31px;
+}
+
+.person-icon .icon-down {
+    font-size: 16px;
+}
+
+.account {
+    justify-content: end;
+    display: flex;
+}
+
+.logo {
+    margin: 10px;
+}
+
+.icon-down {
+    font-size: 10px;
+}
+
+.buy-btn {
+    background-color: #ff5e57;
+    color: white;
+}
+
+.buy-btn:hover {
+    background-color: #e04a44;
+}
+
+.quantity input {
+    width: 50px;
+    text-align: center;
+}
+
+/* Hiệu ứng click */
+.clicked {
+    transform: scale(0.95);
+    transition: transform 0.1s ease;
+}
